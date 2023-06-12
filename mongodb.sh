@@ -1,5 +1,5 @@
 echo "Copying the mongodb repo file"
-cp /DevOps\ Training/GitHub-Repos/Roboshop-Shell/mongodb.repo  /etc/yum.repos.d/mongo.repo
+cp /DevopsTraining/Roboshop-Shell/mongodb.repo  /etc/yum.repos.d/mongo.repo
 
 echo "Installing mongodb packages"
 yum install mongodb-org -y

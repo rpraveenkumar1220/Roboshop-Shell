@@ -22,7 +22,7 @@ cd /app
 npm install
 
 echo "Copying the Service file"
-cp /DevOps\ Training/GitHub-Repos/Roboshop-Shell/cart.service /etc/systemd/system/cart.service
+cp /DevopsTraining/Roboshop-Shell/cart.service /etc/systemd/system/cart.service
 
 echo "Restarting services"
 systemctl daemon-reload
