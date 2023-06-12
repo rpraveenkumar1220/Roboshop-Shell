@@ -18,7 +18,7 @@ cd /app
 npm install
 
 echo "Setting service files"
-cp /DevopsTraining/Roboshop-Shell/user.service  /etc/systemd/system/user.service
+cp /home/centos/Roboshop-Shell/user.service  /etc/systemd/system/user.service
 
 echo "Restarting Daemon"
 systemctl daemon-reload
@@ -28,7 +28,7 @@ systemctl enable user
 systemctl start user
 
 echo "Setting mongodb repo file"
-cp /DevopsTraining/Roboshop-Shell/mongodb.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/Roboshop-Shell/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 echo "Installing mongodb client"
 yum install mongodb-org-shell -y

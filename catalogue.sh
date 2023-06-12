@@ -22,7 +22,7 @@ cd /app
 npm install
 
 echo "Copying component service file"
-cp /DevopsTraining/Roboshop-Shell/catalogue.service  /etc/systemd/system/catalogue.service
+cp /home/centos/Roboshop-Shell/catalogue.service  /etc/systemd/system/catalogue.service
 
 echo "Restarting services"
 systemctl daemon-reload
@@ -30,7 +30,7 @@ systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
 
-cp /DevopsTraining/Roboshop-Shell/mongodb.repo  /etc/yum.repos.d/mongo.repo
+cp /home/centos/Roboshop-Shell/mongodb.repo  /etc/yum.repos.d/mongo.repo
 
 yum install mongodb-org-shell -y
 

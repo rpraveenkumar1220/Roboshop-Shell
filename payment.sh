@@ -19,7 +19,7 @@ cd /app
 pip3.6 install -r requirements.txt
 
 echo "Setting up payment service file"
-cp /DevopsTraining/Roboshop-Shell/payment.service  /etc/systemd/system/payment.service
+cp /home/centos/Roboshop-Shell/payment.service  /etc/systemd/system/payment.service
 
 echo "Reloading the process"
 systemctl daemon-reload

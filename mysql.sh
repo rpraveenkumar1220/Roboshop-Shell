@@ -2,7 +2,7 @@ echo "Disabling the current mysql module"
 yum module disable mysql -y
 
 echo "copying mysql repo file"
-cp /DevopsTraining/Roboshop-Shell/mysql.repo /etc/yum.repos.d/mysql.repo
+cp /home/centos/Roboshop-Shell/mysql.repo /etc/yum.repos.d/mysql.repo
 
 echo "Installing mysql package"
 yum install mysql-community-server -y

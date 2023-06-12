@@ -21,7 +21,7 @@ go get
 go build
 
 echo "Copying component service file"
-cp /DevopsTraining/Roboshop-Shell/dispatch.service /etc/systemd/system/dispatch.service
+cp /home/centos/Roboshop-Shell/dispatch.service /etc/systemd/system/dispatch.service
 
 echo "Restarting services"
 systemctl daemon-reload
