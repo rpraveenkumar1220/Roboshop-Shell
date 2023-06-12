@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Roboshop-Shell.iml" filepath="$PROJECT_DIR$/.idea/Roboshop-Shell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Roboshop-Shell.iml" filepath="$PROJECT_DIR$/Roboshop-Shell.iml" />
     </modules>
   </component>
 </project>
