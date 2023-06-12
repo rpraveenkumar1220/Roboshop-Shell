@@ -18,5 +18,5 @@ unzip /tmp/frontend.zip
 echo "Configuring the frontend"
 cp  /DevopsTraining/Roboshop-Shell/roboshop.conf  /etc/nginx/default.d/roboshop.conf
 
-echo"restarting the nginx"
+echo "restarting the nginx"
 systemctl restart nginx
