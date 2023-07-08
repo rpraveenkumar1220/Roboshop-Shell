@@ -34,5 +34,5 @@ cp /home/centos/Roboshop-Shell/mongodb.repo  /etc/yum.repos.d/mongo.repo
 
 yum install mongodb-org-shell -y
 
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongo --host dev-mongodb.devopskumar.site </app/schema/catalogue.js
 
