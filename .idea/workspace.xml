@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a356e91e-62c8-4a99-8429-19995badf762" name="Changes" comment="Basic Shell structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipping.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shipping.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis.sh" beforeDir="false" afterPath="$PROJECT_DIR$/redis.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688804347186</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Basic Shell structure">
+      <created>1688805586883</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688805586883</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
