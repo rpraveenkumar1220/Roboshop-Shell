@@ -8,11 +8,10 @@ echo "Installing redis package"
 yum install redis -y
 
 echo "Changing ports"
-sed -i 's/127.0.0.1/0.0.0.0/' /etc/redis.conf
-sed -i 's/127.0.0.1/0.0.0.0/' /etc/redis/redis.conf
+sed -i 's/127.0.0.1/0.0.0.0/' /etc/redis.conf  /etc/redis/redis.conf
 
 
-echo "Enabling and startindg redis service"
+echo "Enabling and starting redis service"
 systemctl enable redis
 systemctl start redis
 
