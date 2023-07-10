@@ -2,7 +2,7 @@ echo "Installing python package"
 yum install python36 gcc python3-devel -y
 
 echo "Adding application user"
-useradd roboshopuseradd roboshop
+useradd  roboshop
 
 echo "creating Application directory"
 mkdir /app

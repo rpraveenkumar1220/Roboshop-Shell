@@ -17,6 +17,4 @@ mysql_secure_installation --set-root-pass RoboShop@1
 echo "Connecting to DB to check the password Authentication"
 mysql -uroot -pRoboShop@1
 
-echo "Exiting the DB"
-\q
 
