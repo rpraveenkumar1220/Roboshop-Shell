@@ -34,4 +34,4 @@ echo "Installing mongodb client"
 yum install mongodb-org-shell -y
 
 echo "Loading schema"
-mongo --host  dev-mongodb.devopskumar.site </app/schema/user.js
+mongo --host  mongodb-dev.devopskumar.site </app/schema/user.js

@@ -37,5 +37,5 @@ echo "Installing MongoDB client"
 yum install mongodb-org-shell -y
 
 echo "Loading Schema"
-mongo --host dev-mongodb.devopskumar.site </app/schema/catalogue.js
+mongo --host mongodb-dev.devopskumar.site </app/schema/catalogue.js
 

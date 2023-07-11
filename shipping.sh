@@ -29,7 +29,7 @@ echo "Installing Mysql client"
 yum install mysql -y
 
 echo "checking user and password authentication"
-mysql -h dev-mysql.devopskumar.site -uroot -pRoboShop@1 < /app/schema/shipping.sql
+mysql -h mysql-dev.devopskumar.site -uroot -pRoboShop@1 < /app/schema/shipping.sql
 
 echo "Restarting Shipping service"
 systemctl restart shipping
