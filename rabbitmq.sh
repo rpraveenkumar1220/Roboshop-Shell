@@ -1,16 +1,18 @@
-echo -e "\e[31m Downloading erlang repositories \e[0m"
-curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash   &>> /tmp/roboshop.log
+source common.sh
 
-echo -e "\e[31m Downloading rabbitmq repositories \e[0m"
-curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | bash  &>> /tmp/roboshop.log
+echo -e "${color} Downloading erlang repositories ${nocolor}"
+curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash   &>> ${log_file}
 
-echo -e "\e[31m Installing rabbitmq packages \e[0m"
-yum install rabbitmq-server -y   &>> /tmp/roboshop.log
+echo -e "${color} Downloading rabbitmq repositories ${nocolor}"
+curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | bash  &>> ${log_file}
 
-echo -e "\e[31m Enabling and starting rabbitmq server \e[0m"
-systemctl enable rabbitmq-server  &>> /tmp/roboshop.log
-systemctl start rabbitmq-server   &>> /tmp/roboshop.log
+echo -e "${color} Installing rabbitmq packages ${nocolor}"
+yum install rabbitmq-server -y   &>> ${log_file}
 
-echo -e "\e[31m Adding app user and setting permissions \e[0m"
-rabbitmqctl add_user roboshop roboshop123   &>> /tmp/roboshop.log
-rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"   &>> /tmp/roboshop.log
+echo -e "${color} Enabling and starting rabbitmq server ${nocolor}"
+systemctl enable rabbitmq-server  &>> ${log_file}
+systemctl start rabbitmq-server   &>> ${log_file}
+
+echo -e "${color} Adding app user and setting permissions ${nocolor}"
+rabbitmqctl add_user roboshop roboshop123   &>> ${log_file}
+rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"   &>> ${log_file}

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a356e91e-62c8-4a99-8429-19995badf762" name="Changes" comment="Basic Shell structure">
+      <change afterPath="$PROJECT_DIR$/common.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cart.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue.sh" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.sh" afterDir="false" />
@@ -212,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689048880292</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Basic Shell structure">
+      <created>1689525571583</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1689525571583</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
