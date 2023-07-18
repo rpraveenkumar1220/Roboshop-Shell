@@ -1,4 +1,4 @@
-color="\e[31m"
+color="\e[35m"
 nocolor="\e[0m"
 log_file="/tmp/roboshop.log"
 user_id=$(id -u)
@@ -63,6 +63,9 @@ app_setup(){
 services_setup(){
   echo -e "${color} Copying the Service file ${nocolor}"
   cp /home/centos/Roboshop-Shell/${component}.service /etc/systemd/system/${component}.service  &>> ${log_file}
+  if [ ${component} == payment]; then
+    sed -i 's/rabbitmq_password/${rabbitmq_password}/'   /etc/systemd/system/${component}.service
+  fi
   stat_check $?
 
   echo -e "${color} Restarting services ${nocolor}"
@@ -144,7 +147,7 @@ mysql_setup(){
   stat_check $?
 
   echo -e "${color}checking user and password authentication${nocolor}"
-  mysql -h mysql-dev.devopskumar.site -uroot -pRoboShop@1 < /app/schema/${component}.sql   &>> /tmp/roboshop.log
+  mysql -h mysql-dev.devopskumar.site -uroot -p$mysql_password < /app/schema/${component}.sql   &>> /tmp/roboshop.log
   stat_check $?
 
   echo -e "${color}Restarting ${component} service ${nocolor}"

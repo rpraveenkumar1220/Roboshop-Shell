@@ -14,5 +14,5 @@ systemctl enable rabbitmq-server  &>> ${log_file}
 systemctl start rabbitmq-server   &>> ${log_file}
 
 echo -e "${color} Adding app user and setting permissions ${nocolor}"
-rabbitmqctl add_user roboshop roboshop123   &>> ${log_file}
+rabbitmqctl add_user roboshop  $1   &>> ${log_file}
 rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"   &>> ${log_file}

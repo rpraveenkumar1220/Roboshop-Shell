@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a356e91e-62c8-4a99-8429-19995badf762" name="Changes" comment="Basic Shell structure">
-      <change afterPath="$PROJECT_DIR$/common.sh" afterDir="false" />
+    <list default="true" id="a356e91e-62c8-4a99-8429-19995badf762" name="Changes" comment="Final Shell structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue.sh" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatch.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dispatch.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend.sh" beforeDir="false" afterPath="$PROJECT_DIR$/frontend.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.sh" beforeDir="false" afterPath="$PROJECT_DIR$/common.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/payment.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis.sh" beforeDir="false" afterPath="$PROJECT_DIR$/redis.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shipping.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shipping.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.sh" beforeDir="false" afterPath="$PROJECT_DIR$/user.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,12 +212,20 @@
       <option name="project" value="LOCAL" />
       <updated>1689525571583</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Final Shell structure">
+      <created>1689579664340</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1689579664340</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New change" />
     <MESSAGE value="Basic Shell structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic Shell structure" />
+    <MESSAGE value="Final Shell structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Shell structure" />
   </component>
 </project>
