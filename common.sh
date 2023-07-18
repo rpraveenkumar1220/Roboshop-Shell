@@ -2,15 +2,13 @@ color="\e[35m"
 nocolor="\e[0m"
 log_file="/tmp/roboshop.log"
 user_id=$(id -u)
-
-
-if [ $user_id -ne 0]; then
+if [ $user_id -ne 0 ]; then
   echo script should be running with root user
   exit 1
 fi
 
 stat_check(){
-  if [ $1 -eq 0]; then
+  if [ $1 -eq 0 ]; then
     echo  Success
   else
     echo Failure
@@ -37,14 +35,14 @@ nodejs(){
 app_setup(){
   echo -e "${color} Adding the user ${nocolor}"
   id roboshop &>> ${log_file}
-  if[ $? -eq 1 ]; then
+  if [ $? -eq 1 ]; then
   useradd roboshop  &>> ${log_file}
   fi
   stat_check $?
 
   echo  -e "${color} Creating the Directory ${nocolor}"
   cd /app &>> ${log_file}
-  if [ $? -eq 1];then
+  if [ $? -eq 1 ];then
   mkdir /app  &>> ${log_file}
   fi
   stat_check $?
@@ -63,7 +61,7 @@ app_setup(){
 services_setup(){
   echo -e "${color} Copying the Service file ${nocolor}"
   cp /home/centos/Roboshop-Shell/${component}.service /etc/systemd/system/${component}.service  &>> ${log_file}
-  if [ ${component} == payment]; then
+  if [ ${component} == payment ]; then
     sed -i 's/rabbitmq_password/${rabbitmq_password}/'   /etc/systemd/system/${component}.service
   fi
   stat_check $?

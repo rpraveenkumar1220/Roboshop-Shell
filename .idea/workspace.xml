@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a356e91e-62c8-4a99-8429-19995badf762" name="Changes" comment="Final Shell structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common.sh" beforeDir="false" afterPath="$PROJECT_DIR$/common.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mysql.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipping.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shipping.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689579664340</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Final Shell structure">
+      <created>1689654351687</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1689654351687</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
