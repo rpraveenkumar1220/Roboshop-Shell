@@ -1,8 +1,8 @@
 source common.sh
 
-#echo -e "${color} Disabling the current ${component} module ${nocolor}"
-#yum module disable mysql -y &>> ${log_file}
-#stat_check $?
+echo -e "${color} Disabling the current ${component} module ${nocolor}"
+yum module disable mysql -y &>> ${log_file}
+stat_check $?
 
 echo -e "${color} copying mysql repo file ${nocolor}"
 cp /home/centos/Roboshop-Shell/mysql.repo /etc/yum.repos.d/mysql.repo  &>> ${log_file}
