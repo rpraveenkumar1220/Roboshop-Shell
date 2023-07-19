@@ -22,13 +22,14 @@ nodejs(){
   echo  -e "${color} Installing the nodejs Package ${nocolor}"
   yum install nodejs -y  &>> ${log_file}
   stat_check $?
+
   app_setup
 
   echo -e "${color} Installing Dependencies ${nocolor}"
     cd /app  &>> ${log_file}
     npm install  &>> ${log_file}
     stat_check $?
-  component_setup
+
   services_setup
 }
 
