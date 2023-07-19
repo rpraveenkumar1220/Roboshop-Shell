@@ -60,7 +60,7 @@ app_setup(){
 services_setup(){
   echo -e "${color} Copying the Service file ${nocolor}"
   cp /home/centos/Roboshop-Shell/${component}.service /etc/systemd/system/${component}.service  &>> ${log_file}
-  if [ ${component} == payment ]; then
+  if [ ${component} == payment ]&&[ ${component} == dispatch ]; then
     sed -i 's/rabbitmq_password/${rabbitmq_password}/'   /etc/systemd/system/${component}.service
   fi
   stat_check $?
