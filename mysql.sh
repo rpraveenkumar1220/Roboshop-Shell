@@ -21,8 +21,4 @@ echo -e "${color} Setting password for mysql ${nocolor}"
 mysql_secure_installation --set-root-pass  $1  &>> ${log_file}
 stat_check $?
 
-echo -e "${color} Connecting to DB to check the password Authentication ${nocolor}"
-mysql -uroot -pRoboShop@1   &>> ${log_file}
-stat_check $?
-
 
