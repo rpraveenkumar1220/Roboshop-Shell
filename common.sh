@@ -41,10 +41,8 @@ app_setup(){
   stat_check $?
 
   echo  -e "${color} Creating the Directory ${nocolor}"
-  cd /app &>> ${log_file}
-  if [ $? -eq 1 ];then
+  rm -rf /app &>> ${log_file}
   mkdir /app  &>> ${log_file}
-  fi
   stat_check $?
 
   echo -e "${color} Downloading the ${component} component ${nocolor}"
